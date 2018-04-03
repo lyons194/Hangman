@@ -1,5 +1,5 @@
 if 9 > 8:
-  print(" _______")
+	print(" _______")
 	print("|      |")
 	print("|      |")
 	print("|      |")
@@ -8,8 +8,9 @@ if 9 > 8:
 	print("|     / ")
 	print("|")
 	print("|")
-	print("|         *HANG MAN*")
-	print("|")
+	print("|         ------------")
+	print("|         |*HANG MAN*|")
+	print("|         ------------")
 	print("|")
 	print("________")
 	print(" ")
@@ -19,5 +20,6 @@ if 9 > 8:
 		print("Goodbye!")
 	elif a == "Y":
 		print("All right! Let's begin!")
-	else:
-		a = str(input("Want to play (Y/N)"))
+	import random
+	phrasebank = [["Ivan", "the", "Terrible"], ["From", "Sea", "to", "Shining", "Sea"]]
+	print(len(random.choice(phrasebank))*"___________")
