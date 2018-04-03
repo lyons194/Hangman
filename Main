@@ -1,0 +1,23 @@
+if 9 > 8:
+  print(" _______")
+	print("|      |")
+	print("|      |")
+	print("|      |")
+	print("|      O")
+	print("|     /|")
+	print("|     / ")
+	print("|")
+	print("|")
+	print("|         *HANG MAN*")
+	print("|")
+	print("|")
+	print("________")
+	print(" ")
+	print(" ")
+	a = str(input("Want to play? (Y/N)"))
+	if a == "N":
+		print("Goodbye!")
+	elif a == "Y":
+		print("All right! Let's begin!")
+	else:
+		a = str(input("Want to play (Y/N)"))
