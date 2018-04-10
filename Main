@@ -1,4 +1,5 @@
-if 9 > 8:
+#Begin Hangman.
+f 9 > 8:
 	print(" _______")
 	print("|      |")
 	print("|      |")
