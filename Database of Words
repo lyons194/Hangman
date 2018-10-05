@@ -1,0 +1,10 @@
+#This page contains the database of words that the program can potentiall use!
+#The database will have two elements: An extensive list of random nouns, and a random number generator.  Depending on the parameters set with respect to the random number generated, the program will choose one of the words from the extensive list.
+"""
+
+Begin program!
+
+"""
+if 1:
+        library = ["danger", "cheetah", "ice cream", "Detroit", "shake", "opportunity", "noun", "geyser", "astronaut", "musical"]
+        print(len(library))
