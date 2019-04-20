@@ -24,3 +24,36 @@ if 9 > 8:
 	import random
 	phrasebank = [["Ivan", "the", "Terrible"], ["From", "Sea", "to", "Shining", "Sea"]]
 	print(len(random.choice(phrasebank))*"___________")
+
+
+
+def hangman():
+	import random
+	phrasebank = [["Ivan", "the", "Terrible"], ["From", "Sea", "to", "Shining", "Sea"]]
+	print(" _______")
+	print("|      |")
+	print("|      |")
+	print("|      |")
+	print("|      O/")
+	print("|     /| ")
+	print("|     / |")
+	print("|")
+	print("|")
+	print("|         ------------")
+	print("|         |*HANG MAN*|")
+	print("|         ------------")
+	print("|")
+	print("________")
+	print(" ")
+	print(" ")
+	a = str(input("Want to play? (Y/N)"))
+	if a == "N":
+		print("Goodbye!")
+	elif a == "Y":
+		print("All right! Let's begin!")
+	the = random.random()
+	if 0 < the < 0.5:
+	      it = phrasebank[0]
+	elif 0.5 < the < 1:
+	      it = phrasebank[1]
+	print(len(random.choice(phrasebank))*"___________")
