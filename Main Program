@@ -51,6 +51,8 @@ def hangman():
 			gamebank2.append(" ")
 			control_bank=control_bank+1
 		control_beta=0
+		#Note:  Use control_beta, control_-----, etc., to designate the different stages of the game (i.e., for each body part.).
+		#After a body part is added, the control_---- section is completed and the user is shifted to the next control_------ section.
 		print("This is the game play section")
 		print(" _______ ")
 		print("|      | ")
@@ -71,3 +73,7 @@ def hangman():
 		entry=input("Please guess a letter"  )
 		#Note: The stop-gap is below this comment.  Remove this stop-gap once the program is completed.
 		control=control+1
+
+
+
+
