@@ -9,7 +9,8 @@
 
 def hangman():
 	import random
-	phrasebank = [["Ivan", "the", "Terrible"], ["From", "Sea", "to", "Shining", "Sea"]]
+	phrasebank=[["Ivan", "the", "Terrible"], ["From", "Sea", "to", "Shining", "Sea"]]
+	gamebank1=[]; gamebank2=[];
 	print(" _______")
 	print("|      |")
 	print("|      |")
@@ -28,14 +29,45 @@ def hangman():
 	print(" ")
 	a = str(input("Want to play? (Y/N)"))
 	if a == "N":
+		print("\n"*5)
 		print("Goodbye!")
+		print("\n"*5)
 	elif a == "Y":
+		print("\n"*5)
 		print("All right! Let's begin!")
+		print("\n"*5)
 	the = random.random()
 	if 0 < the < 0.5:
 	      it = phrasebank[0]
+	      gamebank1.append(it)
 	elif 0.5 < the < 1:
 	      it = phrasebank[1]
-	print(len(random.choice(phrasebank))*"___________")
-
-hangman()
+	      gamebank1.append(it)
+	control=0
+	while control==0:
+		control_bank=0
+		while control_bank<len(gamebank1[0]):
+			gamebank2.extend(gamebank1[0][control_bank])
+			gamebank2.append(" ")
+			control_bank=control_bank+1
+		control_beta=0
+		print("This is the game play section")
+		print(" _______ ")
+		print("|      | ")
+		print("|      | ")
+		print("|      | ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("|        ")
+		print("________ ")
+		print("|      | ")
+		print("         ")
+		entry=input("Please guess a letter"  )
+		#Note: The stop-gap is below this comment.  Remove this stop-gap once the program is completed.
+		control=control+1
