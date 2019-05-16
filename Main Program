@@ -98,3 +98,208 @@ def hangman():
 				control_beta = control_beta + 1
 		#Note: The stop-gap is below this comment.  Remove this stop-gap once the program is completed.
 		control=control+1
+
+def hangman():
+	import random
+	phrasebank=[["Ivan", "the", "Terrible"], ["From", "Sea", "to", "Shining", "Sea"]]
+	gamebank1=[]; gamebank2=[];
+	print(" _______")
+	print("|      |")
+	print("|      |")
+	print("|      |")
+	print("|      O/")
+	print("|     /| ")
+	print("|     / |")
+	print("|")
+	print("|")
+	print("|         ------------")
+	print("|         |*HANG MAN*|")
+	print("|         ------------")
+	print("|")
+	print("________")
+	print(" ")
+	print(" ")
+	a = str(input("Want to play? (Y/N)"))
+	if a == "N":
+		print("\n"*5)
+		print("Goodbye!")
+		print("\n"*5)
+	elif a == "Y":
+		print("\n"*5)
+		print("All right! Let's begin!")
+		print("\n"*5)
+	the = random.random()
+	if 0 < the < 0.5:
+	      it = phrasebank[0]
+	      gamebank1.append(it)
+	elif 0.5 < the < 1:
+	      it = phrasebank[1]
+	      gamebank1.append(it)
+	control=0
+	while control==0:
+		control_bank=0
+		while control_bank<len(gamebank1[0]):
+			gamebank2.extend(gamebank1[0][control_bank])
+			gamebank2.append(" ")
+			control_bank=control_bank+1
+			print(gamebank1); print(gamebank2); print(control_bank)
+		control_alpha=0
+		#Note:  Use control_alpha, control_beta, control_-----, etc., to designate the different stages of the game (i.e., for each body part.).
+		#After a body part is added, the control_---- section is completed and the user is shifted to the next control_------ section.
+		while control_alpha==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			entry=input("Please guess a letter"  )
+			if entry == "cubert":
+				control_alpha = control_alpha + 1
+		control_beta=0
+		while control_beta==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|      O ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			entry=input("Please guess a letter"  )
+			if entry == "wack":
+				control_beta = control_beta + 1
+		control_delta=0
+		while control_delta==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|      O ")
+			print("|      | ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			entry=input("Please guess a letter"  )
+			if entry=="holland":
+				control_delta=control_delta+1
+		control_gama=0
+		while control_gama==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|      O ")
+			print("|     /| ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			entry=input("Please guess a letter"  )
+			if entry=="loli":
+				control_gama=control_gama+1
+		control_omicron=0
+		while control_omicron==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|      O/")
+			print("|     /| ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			entry=input("Please guess a letter"  )
+			if entry=="sucker":
+			      control_omicron=control_omicron+1
+		control_omega=0
+		while control_omega==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|      O/")
+			print("|     /| ")
+			print("|     /  ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			entry=input("Please guess a letter"  )
+			if entry=="digger":
+			      control_omega=control_omega+1
+		control_zeta=0
+		while control_zeta==0:
+			print("This is the game play section")
+			print(" _______ ")
+			print("|      | ")
+			print("|      | ")
+			print("|      | ")
+			print("|      O/")
+			print("|     /| ")
+			print("|     / |")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("|        ")
+			print("________ ")
+			print("|      | ")
+			print("         ")
+			print("GAME OVER")
+			entry=input("Would you like to play again?")
+			if entry =="yes":
+			      break
+			elif entry=="no":
+				control_zeta=control_zeta+1
+				control=control+1
