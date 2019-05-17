@@ -47,16 +47,27 @@ def hangman():
 		x = gamebank1[0].split()
 		print(x)
 		liney = []
+		scripty = []
 		n = 0
 		while n < len(x):
 			liner = "_"*len(x[n])
+			scripter = x[n]
 			liney.append(liner)
+			scripty.append(scripter)
 			n = n + 1
 		control_alpha=0
 		#Note:  Use control_alpha, control_beta, control_-----, etc., to designate the different stages of the game (i.e., for each body part.).
 		#After a body part is added, the control_---- section is completed and the user is shifted to the next control_------ section.
 		while control_alpha==0:
 			print(liney)
+			print(liney[0])
+			print(liney[1])
+			print(liney[2])
+			a = liney
+			print(a[0])
+			b = scripty
+			print(b)
+			print(b[0:])
 			print("This is the game play section")
 			print(" _______ ")
 			print("|      | ")
@@ -81,6 +92,8 @@ def hangman():
 			entry=input("Please guess a letter"  )
 			if entry == "cubert":
 				control_alpha = control_alpha + 1
+			if entry == b[0][0]:
+				print('yelling')
 		control_beta=0
 		while control_beta==0:
 			print("This is the game play section")
