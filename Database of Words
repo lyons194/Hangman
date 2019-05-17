@@ -1,46 +1,5 @@
-#This page contains the database of words that the program can potentiall use!
-#The database will have two elements: An extensive list of random nouns, and a random number generator.  Depending on the parameters set with respect to the random number generated, the program will choose one of the words from the extensive list.
-"""
+#A complete listing of the nouns and phrases within the hangman program.
 
+1 - Ivan the Terrible
+2 - From Sea to Shining Sea
 
-**Note: Though the program prints the selected word, future drafts of the program will not print the word.  The word will remain a secret to the user.  Then, once the word is selected, the program will print blank spaces for each letter of the word.  Below is a rudimentary draft of this portion of the program.
-
-
-BEGIN PROGRAM!
-
-
-"""
-if 1:
-	library = ["danger", "cheetah", "ice cream", "Detroit", "shake", "opportunity", "noun", "geyser", "astronaut", "musical"]
-	import random
-	a = random.random()
-	if a > 0 and a < 0.10:
-		print(library[0])
-		a = 0
-	elif 0.1 < a < 0.2:
-		print(library[1])
-		a = 0
-	elif 0.2 < a < 0.3:
-		print(library[2])
-		a = 0
-	elif 0.3 < a < 0.4:
-		print(library[2])
-		a = 0
-	elif 0.4 < a < 0.4:
-		print(library[3])
-		a = 0
-	elif 0.5 < a < 0.6:
-		print(library[4])
-		a = 0
-	elif 0.6 < a < 0.7:
-		print(library[5])
-		a = 0
-	elif 0.7 < a < 0.8:
-		print(library[6])
-		a = 0
-	elif 0.8 < a < 0.9:
-		print(library[7])
-		a = 0
-	elif 0.9 < a < 1:
-		print(library[8])
-		a = 0
